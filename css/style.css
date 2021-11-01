@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+:root {
+  --primary-color: #c5e4e7;
+  --secondary-color: #00474b;
+  --button-primary-color: #25c2ad;
+  --button-secondary-color: #00474b;
+  --text-color: #828e91;
+  --warning-color: #b47d6d;
+  --outline-color: #58a99e;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+input {
+  width: 100%;
+  border-radius: 3px;
+  outline: none;
+  height: 35px;
+  background-color: #f3f8fb;
+  border: none;
+  padding: 10px;
+  color: #024649;
+  text-align: right;
+}
+
+button,
+input {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+input:hover {
+  border: 2px solid var(--outline-color);
+  cursor: pointer;
+}
+
+.tip-percentage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8em;
+}
+
+.tip-percentage .selected {
+  background-color: var(--button-primary-color);
+  color: var(--text-color);
+}
+
+.display {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  color: var(--text-color);
+}
+
+.display .reset-btn {
+  background-color: var(--button-primary-color);
+  width: 100%;
+  color: #00474b;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.dollar-img {
+  background-image: url("../img/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: left 0.7em center;
+}
+
+.person-img {
+  background-image: url("../img/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: left 0.7em center;
+}
+
+.tip-amount,
+.total-amount {
+  height: 50px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: space-between;
+  color: #fff;
+}
+
+.tip-amount h4,
+.total-amount h4 {
+  color: var(--text-color);
+}
+
+.result {
+  color: #26c0ab;
+  text-align: end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.warning {
+  color: var(--warning-color);
+}
+
+.display .reset-btn:disabled {
+  background-color: hsl(184, 49%, 28%);
+  color: hsl(184, 49%, 24%);
+  cursor: not-allowed;
+}
