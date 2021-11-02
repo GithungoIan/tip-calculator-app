@@ -25,7 +25,7 @@
                   <h3>Bill</h3>
                 </div>
                 <div class="form-group">
-                  <input class="dollar-img" type="text" name="" id="">
+                  <input id="bill-amount" class="dollar-img" type="text" name="" id="">
                 </div>
               </div>
 
@@ -39,17 +39,17 @@
                   <button class="btn" value="15">15%</button>
                   <button class="btn" value="25">25%</button>
                   <button class="btn" value="50">50%</button>
-                  <input class="custom" type="text" placeholder="Custom">
+                  <input id="custom-tips" class="custom" type="text" placeholder="Custom">
                 </div>
               </div>
 
               <div>
                 <div class="header my-1">
                   <h3>Number of people</h3>
-                  <h3 class="warning hidden">Can't be zero</h3>
+                  <h3 id="warning" class="warning hidden">Can't be zero</h3>
                 </div>
                 <div class="form-group">
-                  <input class="person-img" class="custom" type="text">
+                  <input id="people" class="person-img" class="custom" type="text">
                 </div>
               </div>
 
@@ -61,7 +61,7 @@
                   <h4>/ Person</h4>
                   <div class="result">
                     <h1>$</h1>
-                    <h1 class="tipamount">0.00</h1>
+                    <h1 id="tip-amount" class="tipamount">0.00</h1>
                   </div>
                 </div>
                 <div class="total-amount my-3">
@@ -69,10 +69,10 @@
                   <h4>/ Person</h4>
                   <div class="result">
                     <h1>$</h1>
-                    <h1 class="totalresult">0.00</h1>
+                    <h1 id="total-amount" class="totalresult">0.00</h1>
                   </div>
                 </div>
-                <button class="btn reset-btn my-5" disabled>RESET</button>
+                <button id="reset-btn" class="btn reset-btn my-5" disabled>RESET</button>
               </div>
             </div>
           </div>
@@ -80,6 +80,8 @@
       </div>
     </div>
   </main>
+
+  <script src="js/script.js"></script>
 
 </body>
 
